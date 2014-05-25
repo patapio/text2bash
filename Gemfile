@@ -25,8 +25,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # MANUALEEEE aggiunto manualmente solo per HEROKU
+group :development, :test do 
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3', '1.3.9'
+end 
 #gem 'sqlite3-ruby', '1.3.9', :require => 'sqlite3'
-gem 'sqlite3-ruby', '1.3.3', :group => :development
+#gem 'sqlite3-ruby', '1.3.3', :group => :development
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
